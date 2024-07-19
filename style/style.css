@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 /* universal style */
 *{
     margin: 0;
@@ -11,27 +11,55 @@ body{
     background: #000;
     color: #fff;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 :root{
     --background-color: rgb(230, 83, 60);
     --color: rgb(230, 83, 60);
-    --font-size:100px;
 }
 .flex{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* shared style End*/
-/* hader style start */
-.nav-container{
+.container{
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
 }
+.pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 28px;
+}
+button{
+    width: 200px;
+    margin: 0px 12px;
+    margin-top: 28px;
+    border-radius: 42px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+    background-color: var(--background-color);
+}
+.btn{
+    font-size: 16px;
+}
+/* shared style End*/
+/* hader style start */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    height:auto;
+}
+/* nav style */ 
 .logo{
     color:var(--color);
     font-weight: 800;
-    font-size: 2.25rem;
+    font-size: 36px;
     /* font-size: 36px; */
     text-align: left;
 }
@@ -44,29 +72,79 @@ body{
     
 }
 #first-menu{
-    background: rgb(230, 83, 60);
+    background: var(--background-color);
     border-radius: 40px;    
 }
 .nav-menu a{
     text-decoration: none;
     padding: 0.5rem 1.25rem;
+    font-size: 18px;
     color:rgb(255, 255, 255);
 }
 .menu-ber{
     /* visibility: hidden; */
     display: none;
 }
-
+/* banner style */
+.banner-content{
+    margin-top: 32px;
+}
+.benner-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 74px;
+    line-height: 120%;
+    text-align: left;
+}
+.benner-text h1>span{
+    font-family:"Dancing Script", cursive;
+    font-weight: 400;    
+}
+#btn-dwn{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+.banner-content img{
+    max-width: 30%;
+    max-height: 100%;
+    min-width: 15rem;
+    min-height: 20rem;;
+}
 /* hader style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive section start */
 @media screen and (max-width:576px) {
-    .nav-menu {
+    .nav-menu, .btn-club{
         display: none;
     }
     .menu-ber{
         display: block;
         font-size: 1.5rem;
         cursor: pointer;
-    }    
+    }   
+    .banner-content{
+        flex-direction: column;
+    }
+    .banner-content img{
+        margin-top: 5rem;
+        width: 20rem;
+        height: 30rem;
+    }
 }
 /* responsive section End */
