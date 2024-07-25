@@ -221,7 +221,65 @@ nav{
     right:-150px;
 }
 /* Run style End */
-
+/* BMI calculator style start */
+.bmi-section{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.bmi-text{
+    margin-left: 30%;
+    line-height: 80px;
+    padding: 0  48px;
+    margin-bottom: 48px;
+}
+.bmi-calculator{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 10%;
+    background-color:var(--Shadow-bg);
+}
+.bmi-chart{
+    width: 30%;
+    text-align: center;
+}
+.bmi-table{
+    border: 1px solid gray;
+    border-collapse: collapse;     
+    width: 100%;
+}
+.bmi-table th, .bmi-table td{
+    border: 1px solid rgba(128, 128, 128,0.4);
+    padding: 10px 20px;
+    text-align: left;   
+}
+.bmi-input-calc{
+    width: 60%;
+    margin-left: 10%;
+}
+.bmi-input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 24px;
+    padding: 10px;
+}
+.bmi-input-calc p{
+    margin-top: 12px;
+}
+.bmi-input input, .bmi-input select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--input-bg);
+}
+.bmi-input select, .bmi-input ::placeholder{
+    color:var(--font-color-p);
+}
+#factor{
+    grid-column: span 2;
+}
+/* BMI calculator style end */
 
 
 
