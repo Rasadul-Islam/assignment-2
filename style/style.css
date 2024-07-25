@@ -374,6 +374,33 @@ nav{
 /* Meet our team style end */
 /* Main section End */
 
+/* Footer section styly start */
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 10%;
+    background-color:var(--Shadow-bg); 
+}
+.footer-content{
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+.footer-text h1{
+    color: var(--color);
+    margin-bottom: 24px;
+}
+.footer-content h3{
+    color: rgba(255, 255, 255,0.7);
+    /* margin-bottom: 5px; */
+    line-height: 36px;
+}
+.footer-container h4{
+    color: rgba(255, 255, 255,0.7);
+    text-align: center;
+    margin: 30px auto;
+}
+.footer-hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
 
-
-
+/* Footer section styly End */
