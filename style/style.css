@@ -343,9 +343,7 @@ nav{
     border-radius: 15px;
     text-align: center;
 }
-
 /* Exercise Tools section End*/
-
 /* Meet our team style start*/
 .teams-info{
     display: grid;
@@ -373,7 +371,6 @@ nav{
 }
 /* Meet our team style end */
 /* Main section End */
-
 /* Footer section styly start */
 .footer-container{
     width: 100%;
@@ -402,5 +399,54 @@ nav{
 .footer-hr{
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
-
 /* Footer section styly End */
+
+/* responsive section start */
+@media screen and (max-width:576px) {
+    .nav-menu, .btn-club{
+        display: none;
+    }
+    .menu-ber{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    /* common small style start */
+    .banner-content,
+    .habit-items,
+    .run-section,
+    .bmi-calculator,
+    .footer-content{
+        flex-direction: column;
+        /* margin-top: 5rem; */
+    }
+    .habit-items .item, .run-img,.bmi-text,.bmi-chart,.bmi-input-calc, .footer-text,
+    .our-section, .online-section{
+        width: 100%;
+        margin: 2rem auto;
+    }
+    /* common small style End */
+    /* Banner small style */
+    .banner-content img{
+        margin-top: 4rem;
+        width: 20rem;
+        height: 30rem;
+    }
+    /* Run small Style */
+    .run-text button{
+        width: 350px;
+    }
+    .tools-btn button{
+        width: 300px;
+    }
+    .run-text button .btn, .tools-btn button .btn{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    /* Meet small style */
+    .teams-info, .tools-cover{
+        height: 2050px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* responsive section End */
