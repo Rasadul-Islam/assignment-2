@@ -17,7 +17,10 @@ a{
 }
 :root{
     --background-color: rgb(230, 83, 60);
+    --Shadow-bg:rgb(34, 34, 34);
+    --input-bg:rgba(255, 255, 255, 0.1);
     --color: rgb(230, 83, 60);
+    --font-color-p:rgba(255, 255, 255, 0.5);
 }
 .flex{
     display: flex;
@@ -27,15 +30,30 @@ a{
 .container{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 48px;
     justify-content: space-between;
 }
-.pera{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+.text-title{
+    color: rgba(255, 255, 255,1);
+    font-size: 32px;
+    font-weight:700;
+    text-align: center;
+    /* margin-bottom: 50px; */
+    margin: 48px auto 24px auto;
+}
+.head-text{
+    font-size: 25px;
+    font-weight: 00;
+    margin-bottom: 24px;
+}
+.pera, td{
+    color: var(--font-color-p);
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
-    margin-top: 28px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
 }
 button{
     width: 200px;
@@ -49,6 +67,15 @@ button{
 .btn{
     font-size: 16px;
 }
+.run-text h1,.run-text p,
+.bmi-text h1,.bmi-text p,
+.bmi-input-calc h1, .bmi-input-calc p,
+.member-info h1, .member-info p,
+.footer-text h1, .footer-text p
+{
+    margin: 0px;
+    text-align: left;
+}
 /* shared style End*/
 /* hader style start */
 header{
@@ -56,11 +83,13 @@ header{
     height:auto;
 }
 /* nav style */ 
+nav{
+    padding-top: 24px;
+}
 .logo{
     color:var(--color);
     font-weight: 800;
-    font-size: 36px;
-    /* font-size: 36px; */
+    font-size: 50px;
     text-align: left;
 }
 .nav-menu {
@@ -68,8 +97,7 @@ header{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     padding: 0.5rem;
-    gap: 3rem;
-    
+    gap: 3rem;    
 }
 #first-menu{
     background: var(--background-color);
@@ -91,60 +119,78 @@ header{
 }
 .benner-text h1{
     color: rgb(255, 255, 255);
-    font-size: 74px;
+    font-size: 50px;
+    font-weight:800;
     line-height: 120%;
     text-align: left;
+    margin-bottom: 28px;
+    padding-left: 24px;
 }
 .benner-text h1>span{
     font-family:"Dancing Script", cursive;
     font-weight: 400;    
 }
+.benner-text p{
+    text-align: left;
+    padding-left: 24px;
+}
 #btn-dwn{
     border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
 }
-.banner-content img{
-    max-width: 30%;
-    max-height: 100%;
+.img-info img{
+    max-width:100%;
     min-width: 15rem;
     min-height: 20rem;;
+    
+}
+.img-info{ 
+    position: relative;
+}
+.img-info .top-box{
+    position: absolute;
+    background-color: rgba(128, 128, 128,0.4);
+    border-radius: 15px;
+    width: 55%;
+    height: 15%;
+    top: 22%;
+    right: -20%;
+    padding: 5% 6%;
+}
+.top-box p, .dwn-box p{
+    text-align: left;
+}
+.img-info .dwn-box{
+    position: absolute;
+    background-color: rgba(128, 128, 128,0.4);
+    border-radius: 15px;
+    width: 55%;
+    height: 15%;
+    bottom: 22%;
+    left: -20%;
+    padding: 5% 3%;
+    text-align: left;
+    padding-left: 60px;
+}
+.circle{
+    position: absolute;
+    background-color: var(--background-color);
+    width: 40px;
+    height: 40px;
+    left:5%;
+    top: 25%;
+    border-radius: 50%;
 }
 /* hader style end */
+/* Main section start */
 
 
 
 
 
 
+/* Main section End */
 
 
 
 
-
-
-
-
-
-
-
-
-/* responsive section start */
-@media screen and (max-width:576px) {
-    .nav-menu, .btn-club{
-        display: none;
-    }
-    .menu-ber{
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }   
-    .banner-content{
-        flex-direction: column;
-    }
-    .banner-content img{
-        margin-top: 5rem;
-        width: 20rem;
-        height: 30rem;
-    }
-}
-/* responsive section End */
