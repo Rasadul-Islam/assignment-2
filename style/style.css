@@ -36,14 +36,14 @@ a{
 .text-title{
     color: rgba(255, 255, 255,1);
     font-size: 32px;
-    font-weight:700;
+    font-weight:800;
     text-align: center;
     /* margin-bottom: 50px; */
     margin: 48px auto 24px auto;
 }
 .head-text{
     font-size: 25px;
-    font-weight: 00;
+    font-weight: 700;
     margin-bottom: 24px;
 }
 .pera, td{
@@ -141,8 +141,7 @@ nav{
 .img-info img{
     max-width:100%;
     min-width: 15rem;
-    min-height: 20rem;;
-    
+    min-height: 20rem;      
 }
 .img-info{ 
     position: relative;
