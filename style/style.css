@@ -183,7 +183,22 @@ nav{
 }
 /* hader style end */
 /* Main section start */
-
+/* Change Your Habits style start */
+.habit-items{
+    justify-content: space-between;
+    margin-top: 48px;
+}
+.habit-items .item{
+    width: 25%;
+    text-align: center;
+}
+.item img{
+    width: 70%;
+    border-radius: 50%;
+    border: 5 px solid var(--Shadow-bg);
+    margin-bottom: 16px;
+}
+/* Change Your Habits style End */
 
 
 
